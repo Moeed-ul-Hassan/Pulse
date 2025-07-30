@@ -1,0 +1,60 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.05" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:0.05" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background geometric shapes -->
+  <circle cx="200" cy="150" r="100" fill="url(#gradient1)" opacity="0.3">
+    <animate attributeName="r" values="100;120;100" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="800" cy="300" r="80" fill="url(#gradient2)" opacity="0.3">
+    <animate attributeName="r" values="80;100;80" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="1000" cy="600" r="60" fill="url(#gradient1)" opacity="0.3">
+    <animate attributeName="r" values="60;80;60" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Healthcare icons -->
+  <g transform="translate(300, 200)" opacity="0.1">
+    <circle cx="0" cy="0" r="20" fill="#667eea"/>
+    <rect x="-10" y="-2" width="20" height="4" fill="white"/>
+    <rect x="-2" y="-10" width="4" height="20" fill="white"/>
+  </g>
+  # thoughts
+
+I need to create a Devin.ai-inspired marketing website for Pulse HMS using pure HTML, CSS, and JavaScript. Based on the research data, Devin.ai uses a dark theme with professional gradients, glassmorphism effects, and smooth animations. The site should showcase Pulse HMS as an AI-powered hospital management system.
+
+Key requirements:
+1. Exact Devin.ai design replica with dark theme
+2. Hero section promoting "Pulse, the AI Hospital Management System"
+3. Feature showcase with step-by-step workflow
+4. "Watch Demo" button linking to Loom video
+5. Use cases, testimonials, team section
+6. Contact form with gradient styling
+7. Smooth scroll animations using Intersection Observer
+8. Mobile-responsive design
+9. Pure HTML/CSS/JS implementation
+
+I'll structure this as a static website that can be served directly, incorporating the glassmorphism design, dark gradients, and interactive animations that match Devin.ai's aesthetic.
+
+# useful_guidelines_from_blueprints
+
+Since this is a pure HTML/CSS/JS website request, I'll focus on creating a static marketing website that doesn't require the React/Express stack. I'll create a minimal directory structure with just the essential files for a marketing website.
+
+# directory_structure
+```json
+[
+    {"path": "index.html", "status": "new"},
+    {"path": "styles.css", "status": "new"},
+    {"path": "script.js", "status": "new"},
+    {"path": "assets/pulse-logo.svg", "status": "new"}
+]
