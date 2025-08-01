@@ -1007,3 +1007,83 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', trackPortfolioClick);
     });
 });
+
+// Watermark functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const watermark = document.querySelector('.watermark');
+    
+    if (watermark) {
+        // Add click functionality to cycle through watermark styles
+        watermark.addEventListener('click', function() {
+            cycleWatermarkStyle();
+        });
+        
+        // Add keyboard shortcut to toggle watermark visibility
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'w') {
+                e.preventDefault();
+                toggleWatermarkVisibility();
+            }
+        });
+        
+        // Add subtle animation on page load
+        setTimeout(() => {
+            watermark.style.opacity = '0.3';
+        }, 1000);
+    }
+});
+
+function cycleWatermarkStyle() {
+    const watermark = document.querySelector('.watermark');
+    if (!watermark) return;
+    
+    const styles = ['default', 'corner', 'center'];
+    const currentStyle = watermark.className.includes('corner') ? 'corner' : 
+                        watermark.className.includes('center') ? 'center' : 'default';
+    
+    const currentIndex = styles.indexOf(currentStyle);
+    const nextIndex = (currentIndex + 1) % styles.length;
+    const nextStyle = styles[nextIndex];
+    
+    // Remove all style classes
+    watermark.classList.remove('corner', 'center');
+    
+    // Add new style class
+    if (nextStyle !== 'default') {
+        watermark.classList.add(nextStyle);
+    }
+    
+    // Show notification
+    const styleNames = {
+        'default': 'Bottom Right',
+        'corner': 'Corner Style',
+        'center': 'Center Background'
+    };
+    
+    showNotification(`Watermark style: ${styleNames[nextStyle]}`, 'info');
+}
+
+function toggleWatermarkVisibility() {
+    const watermark = document.querySelector('.watermark');
+    if (!watermark) return;
+    
+    const isVisible = watermark.style.opacity !== '0';
+    
+    if (isVisible) {
+        watermark.style.opacity = '0';
+        showNotification('Watermark hidden (Ctrl+W to show)', 'info');
+    } else {
+        watermark.style.opacity = '0.3';
+        showNotification('Watermark visible', 'info');
+    }
+}
+
+// Add watermark animation on scroll
+window.addEventListener('scroll', function() {
+    const watermark = document.querySelector('.watermark');
+    if (watermark && !watermark.classList.contains('center')) {
+        const scrolled = window.pageYOffset;
+        const rate = scrolled * -0.1;
+        watermark.style.transform = `rotate(-15deg) translateY(${rate}px)`;
+    }
+});
