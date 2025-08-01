@@ -3,46 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pulse HMS - AI Hospital Management System | Revolutionary Healthcare Technology</title>
-    <meta name="description" content="Pulse HMS is the first AI-powered hospital management system that revolutionizes healthcare operations with intelligent patient care, automated workflows, and advanced analytics. Experience the future of healthcare management.">
-    
-    <!-- Open Graph tags for social media -->
-    <meta property="og:title" content="Pulse HMS - AI Hospital Management System">
-    <meta property="og:description" content="Revolutionary AI-powered hospital management system that transforms healthcare operations with intelligent automation and advanced analytics.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pulsehms.ai">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <title>Pulse - Futuristic AI Platform</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="assets/pulse-logo.svg" alt="Pulse HMS" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-pulse"></i>
+                </div>
                 <span class="logo-text">Pulse</span>
             </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
+            <div class="nav-links">
                 <a href="#features" class="nav-link">Features</a>
-                <a href="#use-cases" class="nav-link">Use Cases</a>
-                <a href="#customers" class="nav-link">Customers</a>
-                <a href="#team" class="nav-link">Team</a>
+                <a href="#about" class="nav-link">About</a>
                 <a href="#contact" class="nav-link">Contact</a>
+                <button class="cta-button">Get Started</button>
             </div>
-            <div class="nav-actions">
-                <button class="btn-secondary">Login</button>
-                <button class="btn-primary">Get Started</button>
-            </div>
-            <div class="hamburger" id="hamburger">
+            <div class="mobile-menu-btn">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -51,348 +41,140 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
-        </div>
+    <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-badge">
-                    <i class="fas fa-star"></i>
-                    <span>The Future of Healthcare Management</span>
+                    <span class="badge-icon">🚀</span>
+                    <span>Next-Generation AI Platform</span>
                 </div>
                 <h1 class="hero-title">
-                    Pulse, the AI <br>
-                    <span class="gradient-text">Hospital Management System</span>
+                    The Future of
+                    <span class="gradient-text">Intelligent</span>
+                    Computing
                 </h1>
                 <p class="hero-description">
-                    Revolutionize your healthcare operations with AI-powered patient management, 
-                    intelligent workflows, and advanced analytics. The first HMS that truly understands healthcare.
+                    Experience the power of advanced AI that understands, learns, and adapts to your needs. 
+                    Pulse brings you the most sophisticated artificial intelligence platform ever created.
                 </p>
                 <div class="hero-actions">
-                    <button class="btn-primary btn-large" id="watch-demo-btn">
+                    <button class="primary-button">
+                        <span>Start Your Journey</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="secondary-button">
                         <i class="fas fa-play"></i>
-                        Watch Demo
+                        <span>Watch Demo</span>
                     </button>
-                    <button class="btn-secondary btn-large">
-                        <i class="fas fa-calendar"></i>
-                        Schedule Consultation
-                    </button>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">Healthcare Features</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">99.9%</div>
-                        <div class="stat-label">System Uptime</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">AI Monitoring</div>
-                    </div>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="dashboard-mockup">
-                    <div class="mockup-header">
-                        <div class="mockup-controls">
-                            <span class="control red"></span>
-                            <span class="control yellow"></span>
-                            <span class="control green"></span>
+                <div class="ai-interface">
+                    <div class="interface-header">
+                        <div class="status-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
                         </div>
-                        <div class="mockup-title">Pulse HMS Dashboard</div>
+                        <div class="interface-title">Pulse AI</div>
                     </div>
-                    <div class="mockup-content">
-                        <img src="https://pixabay.com/get/g39cc61286a8526cf2ddf43556ba5e2592109b25f2a6c2584e78a5f59a1ad627b50d1f1fc45887bd3b71f367492a32fd04c3a7e1dd1a18cdb92d3da364fd34009_1280.jpg" alt="Hospital Technology Dashboard" class="dashboard-image">
-                        <div class="overlay-elements">
-                            <div class="ai-indicator">
-                                <div class="ai-pulse"></div>
-                                <span>AI Active</span>
+                    <div class="interface-content">
+                        <div class="message user-message">
+                            <div class="message-avatar">👤</div>
+                            <div class="message-text">How can you help me today?</div>
+                        </div>
+                        <div class="message ai-message">
+                            <div class="message-avatar">🤖</div>
+                            <div class="message-text">
+                                I'm here to assist you with any task. I can help with coding, analysis, 
+                                creative projects, and much more. What would you like to work on?
                             </div>
                         </div>
+                        <div class="typing-indicator">
+                            <div class="typing-dot"></div>
+                            <div class="typing-dot"></div>
+                            <div class="typing-dot"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Workflow Section -->
-    <section id="features" class="workflow">
+    <!-- Features Section -->
+    <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2>How Pulse HMS Works</h2>
-                <p>From patient registration to discharge, Pulse handles your entire healthcare workflow with AI precision.</p>
+                <h2 class="section-title">Revolutionary Features</h2>
+                <p class="section-subtitle">Discover what makes Pulse the most advanced AI platform</p>
             </div>
-            <div class="workflow-steps">
-                <div class="step" data-step="1">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Patient Registration</h3>
-                        <p>AI-powered patient intake with automatic data validation and insurance verification</p>
-                        <div class="step-visual">
-                            <img src="https://pixabay.com/get/gedd17cd597d491740126740c1d70cc1eb208e43f720d1c9f3003bbbd1661d01a59f1285eb4166a6f4b5d8c96fcc0bb84423071470c44e6c8c3a2a756372073b0_1280.jpg" alt="Healthcare Professional Using Digital System">
-                        </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
                     </div>
+                    <h3>Advanced Neural Networks</h3>
+                    <p>State-of-the-art deep learning models that understand context and generate human-like responses.</p>
                 </div>
-                <div class="step" data-step="2">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Smart Scheduling</h3>
-                        <p>Intelligent appointment scheduling with AI-optimized resource allocation and queue management</p>
-                        <div class="step-visual">
-                            <img src="https://pixabay.com/get/g084e80812092c669c570a9c82a33bdde9b255e47038b96dc459cc59f7ed7466d811befc87dbdef57cd76ab3605592a4b1e2a1f29ca0b5a4d75c6915f8cf2c0f5_1280.jpg" alt="Medical AI Interface">
-                        </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
                     </div>
+                    <h3>Intelligent Coding</h3>
+                    <p>Write, debug, and optimize code across multiple programming languages with unprecedented accuracy.</p>
                 </div>
-                <div class="step" data-step="3">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Clinical Analytics</h3>
-                        <p>Real-time health monitoring with AI-generated insights and predictive analytics</p>
-                        <div class="step-visual">
-                            <img src="https://pixabay.com/get/g22e177aeb1ce873cc661f4b573a7a5567388879520d85f8736c8e7cdba4429b394ff0287f97ecc0ae1306438e290c7e5609b39ed6652ba4f8c572b7c018c292b_1280.jpg" alt="Hospital Technology Dashboard">
-                        </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
                     </div>
+                    <h3>Data Analysis</h3>
+                    <p>Transform complex data into actionable insights with advanced analytics and visualization.</p>
                 </div>
-                <div class="step" data-step="4">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h3>Automated Reporting</h3>
-                        <p>Comprehensive reporting and compliance tracking with automated audit trails</p>
-                        <div class="step-visual">
-                            <img src="https://pixabay.com/get/g0f33edfc757d0b12ccfab6bf9f2a1ce38df5da60aadc2153dc0a0e8d8d22870d16e1ae9a19400683242078e4df8f1d59eaad2bd8bb71ba4792d4b82cd6d67801_1280.jpg" alt="Healthcare Analytics Dashboard">
-                        </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
                     </div>
+                    <h3>Creative Generation</h3>
+                    <p>Create stunning visuals, compelling content, and innovative solutions with AI-powered creativity.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Use Cases Section -->
-    <section id="use-cases" class="use-cases">
+    <!-- Stats Section -->
+    <section class="stats">
         <div class="container">
-            <div class="section-header">
-                <h2>Use Cases</h2>
-                <p>From small clinics to large hospital systems, Pulse HMS adapts to your healthcare needs.</p>
-            </div>
-            <div class="use-cases-grid">
-                <div class="use-case-card">
-                    <div class="card-icon">
-                        <i class="fas fa-hospital"></i>
-                    </div>
-                    <h3>Large Hospital Systems</h3>
-                    <ul>
-                        <li>Multi-department coordination</li>
-                        <li>Complex patient workflows</li>
-                        <li>Enterprise-grade security</li>
-                    </ul>
-                    <img src="https://pixabay.com/get/gd4f08bd7ec5613cd7b8cd3ad113617031583b0579715785d7648c83515d3f2ec57d0392e29f23532c2efefef27b97375b8a8fc2d1d6e9e3223bd3dc861b2641a_1280.jpg" alt="Hospital System">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="99.9">0</div>
+                    <div class="stat-label">Accuracy Rate</div>
                 </div>
-                <div class="use-case-card">
-                    <div class="card-icon">
-                        <i class="fas fa-clinic-medical"></i>
-                    </div>
-                    <h3>Specialty Clinics</h3>
-                    <ul>
-                        <li>Specialized treatment workflows</li>
-                        <li>Custom reporting dashboards</li>
-                        <li>Patient follow-up automation</li>
-                    </ul>
-                    <img src="https://pixabay.com/get/g473076cadf1ceca042f156afead86ba2273b907d05396ef787585fe007a0a0a7e7d86cfcfa2efa8053018b30e3f1d08121fc33d66b4b4a54c6f3ff879161ba0c_1280.jpg" alt="Medical Clinic">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1000000">0</div>
+                    <div class="stat-label">Users Worldwide</div>
                 </div>
-                <div class="use-case-card">
-                    <div class="card-icon">
-                        <i class="fas fa-microscope"></i>
-                    </div>
-                    <h3>Laboratory Management</h3>
-                    <ul>
-                        <li>AI-powered result analysis</li>
-                        <li>Quality control automation</li>
-                        <li>Real-time reporting</li>
-                    </ul>
-                    <img src="https://pixabay.com/get/gfe2578cc3f1b35430fe1507a0fe4eed94d6f70bd3ddf1fff9e450c2376d7e0c981b82d9808b8fcaed6fbb48196e18eb4bb530b7aeffb939a2f7d4d18cde9040b_1280.jpg" alt="Medical Laboratory">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Languages Supported</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Hours Available</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Customer Testimonials -->
-    <section id="customers" class="testimonials">
+    <!-- CTA Section -->
+    <section class="cta-section">
         <div class="container">
-            <div class="section-header">
-                <h2>Trusted by Healthcare Leaders</h2>
-                <p>See how Pulse HMS has transformed healthcare operations worldwide.</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Pulse HMS reduced our patient wait times by 40% and improved our operational efficiency dramatically. The AI insights are game-changing."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user-md"></i>
-                        </div>
-                        <div class="author-info">
-                            <div class="author-name">Dr. Sarah Johnson</div>
-                            <div class="author-title">Chief Medical Officer, Metro General Hospital</div>
-                        </div>
-                    </div>
-                    <div class="testimonial-stats">
-                        <div class="stat">
-                            <div class="stat-number">40%</div>
-                            <div class="stat-label">Faster Patient Processing</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">60%</div>
-                            <div class="stat-label">Reduced Administrative Work</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"The AI-powered analytics have given us unprecedented insights into patient care patterns. Our quality scores have never been higher."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
-                        <div class="author-info">
-                            <div class="author-name">Michael Chen</div>
-                            <div class="author-title">Hospital Administrator, Regional Medical Center</div>
-                        </div>
-                    </div>
-                    <div class="testimonial-stats">
-                        <div class="stat">
-                            <div class="stat-number">25%</div>
-                            <div class="stat-label">Improved Quality Scores</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">90%</div>
-                            <div class="stat-label">Staff Satisfaction</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="team">
-        <div class="container">
-            <div class="section-header">
-                <h2>Meet the Team Legends</h2>
-                <p>The visionary minds behind Pulse HMS innovation.</p>
-            </div>
-            <div class="team-grid">
-                <div class="team-member featured">
-                    <div class="member-avatar">
-                        <div class="avatar-placeholder">
-                            <i class="fas fa-user-circle"></i>
-                        </div>
-                        <div class="member-badge">Founder</div>
-                    </div>
-                    <div class="member-info">
-                        <h3>@Moeed ul Hassan</h3>
-                        <p class="member-title">Founder & Chief Innovation Officer</p>
-                        <p class="member-description">
-                            Visionary healthcare technologist with 15+ years of experience in AI and medical systems. 
-                            Leading the revolution in intelligent healthcare management.
-                        </p>
-                        <div class="member-social">
-                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-stats">
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label">Years AI Experience</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-award"></i>
-                        </div>
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">Healthcare Innovations</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-hospital-alt"></i>
-                        </div>
-                        <div class="stat-number">100+</div>
-                        <div class="stat-label">Healthcare Partners</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2>Ready to Transform Your Healthcare Operations?</h2>
-                    <p>Join leading healthcare organizations using Pulse HMS to deliver better patient care with AI-powered efficiency.</p>
-                    <div class="contact-features">
-                        <div class="feature">
-                            <i class="fas fa-rocket"></i>
-                            <span>Quick 30-day implementation</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-shield-alt"></i>
-                            <span>HIPAA compliant & secure</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-headset"></i>
-                            <span>24/7 dedicated support</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="organization">Healthcare Organization</label>
-                            <input type="text" id="organization" name="organization" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="role">Your Role</label>
-                            <select id="role" name="role" required>
-                                <option value="">Select your role</option>
-                                <option value="ceo">CEO/Executive</option>
-                                <option value="cio">CIO/IT Director</option>
-                                <option value="cmo">CMO/Medical Director</option>
-                                <option value="admin">Hospital Administrator</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Tell us about your needs</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Describe your current challenges and what you're looking for in an HMS..."></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary btn-large">
-                            <i class="fas fa-paper-plane"></i>
-                            Schedule Demo
-                        </button>
-                    </form>
-                </div>
+            <div class="cta-content">
+                <h2>Ready to Experience the Future?</h2>
+                <p>Join thousands of users who are already leveraging the power of Pulse AI</p>
+                <button class="cta-button-large">
+                    <span>Get Started Now</span>
+                    <i class="fas fa-rocket"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -401,73 +183,39 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
+                <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="assets/pulse-logo.svg" alt="Pulse HMS">
-                        <span>Pulse HMS</span>
+                        <div class="logo-icon">
+                            <i class="fas fa-pulse"></i>
+                        </div>
+                        <span>Pulse</span>
                     </div>
-                    <p>The AI-powered hospital management system revolutionizing healthcare operations worldwide.</p>
-                    <div class="footer-social">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                    </div>
+                    <p>Shaping the future of artificial intelligence</p>
                 </div>
-                <div class="footer-links">
-                    <div class="link-group">
-                        <h4>Product</h4>
-                        <a href="#features">Features</a>
-                        <a href="#use-cases">Use Cases</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">Security</a>
-                    </div>
-                    <div class="link-group">
-                        <h4>Company</h4>
-                        <a href="#team">About</a>
-                        <a href="#customers">Customers</a>
-                        <a href="#">Careers</a>
-                        <a href="#">News</a>
-                    </div>
-                    <div class="link-group">
-                        <h4>Resources</h4>
-                        <a href="#">Documentation</a>
-                        <a href="#">API Reference</a>
-                        <a href="#">Support</a>
-                        <a href="#">Blog</a>
-                    </div>
-                    <div class="link-group">
-                        <h4>Legal</h4>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                        <a href="#">HIPAA Compliance</a>
-                        <a href="#">Cookies</a>
-                    </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">API</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Status</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Pulse HMS. All rights reserved. Revolutionizing healthcare with AI.</p>
+                <p>&copy; 2024 Pulse AI. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
-    <!-- Demo Modal -->
-    <div id="demo-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Pulse HMS Demo</h3>
-                <button class="modal-close" id="close-modal">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="video-container">
-                    <iframe id="demo-video" width="100%" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <p>Watch how Pulse HMS transforms healthcare operations with AI-powered automation and intelligent insights.</p>
-            </div>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>

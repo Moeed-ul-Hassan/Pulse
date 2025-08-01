@@ -5,6 +5,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Marketing from "@/pages/marketing";
 import NotFound from "@/pages/not-found";
+import Preloader from "@/components/Preloader";
+import Watermark from "@/components/Watermark";
+import { useState } from "react";
 
 function Router() {
   return (
@@ -16,11 +19,22 @@ function Router() {
 }
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handlePreloaderComplete = () => {
+    setIsLoading(false);
+  };
+
+  if (isLoading) {
+    return <Preloader onComplete={handlePreloaderComplete} />;
+  }
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Router />
+        <Watermark />
       </TooltipProvider>
     </QueryClientProvider>
   );
