@@ -4,3 +4,4 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
+Pulse_HMS_Content_Strategy.xlsx

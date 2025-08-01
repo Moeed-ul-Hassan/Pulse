@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pulse - Futuristic AI Platform</title>
+    <title>Pulse -  AI Platform</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -15,6 +15,12 @@
         <div class="gradient-orb orb-2"></div>
         <div class="gradient-orb orb-3"></div>
         <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Watermark -->
+    <div class="watermark">
+        <span>Team Legends</span>
+        <span>Moeed ul Hassan</span>
     </div>
 
     <!-- Navigation -->
@@ -45,24 +51,24 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-badge">
-                    <span class="badge-icon">🚀</span>
-                    <span>Next-Generation AI Platform</span>
+                    <span class="badge-icon">🏥</span>
+                    <span>Hospital Management System</span>
                 </div>
                 <h1 class="hero-title">
-                    The Future of
-                    <span class="gradient-text">Intelligent</span>
-                    Computing
+                    The Smart
+                    <span class="gradient-text">Hospital Management</span>
+                    System
                 </h1>
                 <p class="hero-description">
-                    Experience the power of advanced AI that understands, learns, and adapts to your needs. 
-                    Pulse brings you the most sophisticated artificial intelligence platform ever created.
+                    Pulse HMS is the complete hospital management solution designed for modern healthcare. 
+                    Streamline patient care, appointments, billing, and operations with our intuitive platform.
                 </p>
                 <div class="hero-actions">
-                    <button class="primary-button">
-                        <span>Start Your Journey</span>
-                        <i class="fas fa-arrow-right"></i>
+                    <button class="primary-button" onclick="openPaymentModal('professional', 59)">
+                        <span>Start Free Trial</span>
+                        <i class="fas fa-rocket"></i>
                     </button>
-                    <button class="secondary-button">
+                    <button class="secondary-button" onclick="scrollToDemo()">
                         <i class="fas fa-play"></i>
                         <span>Watch Demo</span>
                     </button>
@@ -105,37 +111,105 @@
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Revolutionary Features</h2>
-                <p class="section-subtitle">Discover what makes Pulse the most advanced AI platform</p>
+                <h2 class="section-title">Complete Hospital Management</h2>
+                <p class="section-subtitle">Everything you need to run your healthcare facility efficiently</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-brain"></i>
+                        <i class="fas fa-user-injured"></i>
                     </div>
-                    <h3>Advanced Neural Networks</h3>
-                    <p>State-of-the-art deep learning models that understand context and generate human-like responses.</p>
+                    <h3>Patient Management</h3>
+                    <p>Complete patient records, medical history, and treatment plans. Secure, HIPAA-compliant data management for all patient information.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-code"></i>
+                        <i class="fas fa-calendar-check"></i>
                     </div>
-                    <h3>Intelligent Coding</h3>
-                    <p>Write, debug, and optimize code across multiple programming languages with unprecedented accuracy.</p>
+                    <h3>Appointment Scheduling</h3>
+                    <p>Smart appointment booking with automated reminders, conflict detection, and flexible scheduling for doctors and patients.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-qrcode"></i>
                     </div>
-                    <h3>Data Analysis</h3>
-                    <p>Transform complex data into actionable insights with advanced analytics and visualization.</p>
+                    <h3>QR Check-ins</h3>
+                    <p>Streamlined patient check-ins with QR codes. Reduce wait times and improve patient experience with instant registration.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-magic"></i>
+                        <i class="fas fa-file-invoice-dollar"></i>
                     </div>
-                    <h3>Creative Generation</h3>
-                    <p>Create stunning visuals, compelling content, and innovative solutions with AI-powered creativity.</p>
+                    <h3>Billing & Insurance</h3>
+                    <p>Automated billing, insurance processing, and payment tracking. Generate invoices and manage claims efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Section -->
+    <section class="how-we-work">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Implementation Process</h2>
+                <p class="section-subtitle">Get your hospital up and running with Pulse HMS in just days</p>
+            </div>
+            <div class="workflow">
+                <div class="workflow-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Assessment & Setup</h3>
+                    <p>We analyze your hospital's current processes and requirements. Quick setup with your existing data migration and staff training.</p>
+                </div>
+                
+                <div class="workflow-connector">
+                    <div class="connector-line"></div>
+                    <div class="connector-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Configuration</h3>
+                    <p>Customize Pulse HMS to match your hospital's workflow. Set up departments, user roles, and integrate with existing systems.</p>
+                </div>
+                
+                <div class="workflow-connector">
+                    <div class="connector-line"></div>
+                    <div class="connector-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Training & Go-Live</h3>
+                    <p>Comprehensive staff training sessions. Go-live with full support and monitoring to ensure smooth transition.</p>
+                </div>
+                
+                <div class="workflow-connector">
+                    <div class="connector-line"></div>
+                    <div class="connector-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Ongoing Support</h3>
+                    <p>24/7 technical support, regular updates, and continuous optimization. We're here to ensure your success.</p>
                 </div>
             </div>
         </div>
@@ -146,20 +220,717 @@
         <div class="container">
             <div class="stats-grid">
                 <div class="stat-item">
-                    <div class="stat-number" data-target="99.9">0</div>
-                    <div class="stat-label">Accuracy Rate</div>
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Hospitals Using Pulse</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number" data-target="1000000">0</div>
-                    <div class="stat-label">Users Worldwide</div>
+                    <div class="stat-number" data-target="50000">0</div>
+                    <div class="stat-label">Patients Managed</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number" data-target="50">0</div>
-                    <div class="stat-label">Languages Supported</div>
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-label">% Uptime</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number" data-target="24">0</div>
-                    <div class="stat-label">Hours Available</div>
+                    <div class="stat-label">Hours Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Clients Say</h2>
+                <p class="section-subtitle">Real feedback from developers and teams I've worked with</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"Pulse HMS transformed our hospital operations. Patient check-ins are now seamless with QR codes, and our staff can focus on what matters most - patient care."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👨‍⚕️</div>
+                            <div class="author-info">
+                                <div class="author-name">Dr. Sarah Johnson</div>
+                                <div class="author-title">Medical Director, City General Hospital</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"The billing and insurance integration is incredible. We've reduced claim processing time by 70% and improved our revenue cycle significantly."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👩‍💼</div>
+                            <div class="author-info">
+                                <div class="author-name">Maria Rodriguez</div>
+                                <div class="author-title">Hospital Administrator, Regional Medical Center</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★☆</div>
+                        <p>"Implementation was smooth and the training was comprehensive. Our staff learned the system quickly and patient satisfaction scores have improved."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👨‍💼</div>
+                            <div class="author-info">
+                                <div class="author-name">Dr. Michael Chen</div>
+                                <div class="author-title">Chief Medical Officer, Community Hospital</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"The patient management system is intuitive and secure. HIPAA compliance was a breeze, and our patient data is safer than ever."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👩‍⚕️</div>
+                            <div class="author-info">
+                                <div class="author-name">Dr. Emily Thompson</div>
+                                <div class="author-title">IT Director, University Medical Center</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★☆</div>
+                        <p>"Appointment scheduling is now automated and efficient. No more double bookings or scheduling conflicts. Our patients love the online booking feature."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👨‍💼</div>
+                            <div class="author-info">
+                                <div class="author-name">Robert Wilson</div>
+                                <div class="author-title">Operations Manager, Specialty Clinic</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"The 24/7 support team is exceptional. Any issues are resolved quickly, and the system updates are seamless. Highly recommend Pulse HMS."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👩‍💼</div>
+                            <div class="author-info">
+                                <div class="author-name">Lisa Park</div>
+                                <div class="author-title">Nursing Director, Memorial Hospital</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-subtitle">Choose the plan that fits your clinic's needs</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">29</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Perfect for solo practitioners</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Up to 100 patients</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Basic appointment scheduling</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Patient dashboard</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Email support</span>
+                        </div>
+                    </div>
+                    <button class="pricing-button" onclick="openPaymentModal('starter', 29)">
+                        Start Free Trial
+                    </button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">59</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Ideal for small clinics</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Up to 500 patients</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Advanced scheduling</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>QR code check-ins</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Custom branding</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Priority support</span>
+                        </div>
+                    </div>
+                    <button class="pricing-button featured" onclick="openPaymentModal('professional', 59)">
+                        Start Free Trial
+                    </button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">99</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>For growing clinics</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Unlimited patients</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>AI-powered features</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Advanced analytics</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>API access</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Dedicated support</span>
+                        </div>
+                    </div>
+                    <button class="pricing-button" onclick="openPaymentModal('enterprise', 99)">
+                        Start Free Trial
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="payment-modal">
+        <div class="payment-modal-content">
+            <div class="payment-modal-header">
+                <h3>Complete Your Purchase</h3>
+                <button class="close-modal" onclick="closePaymentModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="payment-modal-body">
+                <div class="plan-summary">
+                    <h4 id="selectedPlan">Professional Plan</h4>
+                    <p id="selectedPrice">$59/month</p>
+                    <div class="trial-info">
+                        <i class="fas fa-gift"></i>
+                        <span>14-day free trial, then $59/month</span>
+                    </div>
+                </div>
+                
+                <form id="paymentForm" class="payment-form">
+                    <div class="form-group">
+                        <label for="cardName">Cardholder Name</label>
+                        <input type="text" id="cardName" name="cardName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <div class="card-input-wrapper">
+                            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                            <div class="card-icons">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-amex"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expiryDate">Expiry Date</label>
+                            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" maxlength="5" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="4" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email for receipt</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <button type="submit" class="payment-submit">
+                        <span>Start Free Trial</span>
+                        <i class="fas fa-lock"></i>
+                    </button>
+                </form>
+                
+                <div class="payment-security">
+                    <div class="security-badges">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>256-bit SSL encryption</span>
+                    </div>
+                    <div class="security-badges">
+                        <i class="fas fa-lock"></i>
+                        <span>PCI DSS compliant</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-subtitle">Choose the plan that fits your clinic's needs</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">29</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Perfect for solo practitioners</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Up to 100 patients</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Basic appointment scheduling</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Patient dashboard</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Email support</span>
+                        </div>
+                    </div>
+                    <button class="pricing-button" onclick="openPaymentModal('starter', 29)">
+                        Start Free Trial
+                    </button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">59</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Ideal for small clinics</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Up to 500 patients</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Advanced scheduling</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>QR code check-ins</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Custom branding</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Priority support</span>
+                        </div>
+                    </div>
+                    <button class="pricing-button featured" onclick="openPaymentModal('professional', 59)">
+                        Start Free Trial
+                    </button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">99</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>For growing clinics</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Unlimited patients</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>AI-powered features</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Advanced analytics</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>API access</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Dedicated support</span>
+                        </div>
+                    </div>
+                    <button class="pricing-button" onclick="openPaymentModal('enterprise', 99)">
+                        Start Free Trial
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="payment-modal">
+        <div class="payment-modal-content">
+            <div class="payment-modal-header">
+                <h3>Complete Your Purchase</h3>
+                <button class="close-modal" onclick="closePaymentModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="payment-modal-body">
+                <div class="plan-summary">
+                    <h4 id="selectedPlan">Professional Plan</h4>
+                    <p id="selectedPrice">$59/month</p>
+                    <div class="trial-info">
+                        <i class="fas fa-gift"></i>
+                        <span>14-day free trial, then $59/month</span>
+                    </div>
+                </div>
+                
+                <form id="paymentForm" class="payment-form">
+                    <div class="form-group">
+                        <label for="cardName">Cardholder Name</label>
+                        <input type="text" id="cardName" name="cardName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <div class="card-input-wrapper">
+                            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                            <div class="card-icons">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-amex"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expiryDate">Expiry Date</label>
+                            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" maxlength="5" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="4" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email for receipt</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <button type="submit" class="payment-submit">
+                        <span>Start Free Trial</span>
+                        <i class="fas fa-lock"></i>
+                    </button>
+                </form>
+                
+                <div class="payment-security">
+                    <div class="security-badges">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>256-bit SSL encryption</span>
+                    </div>
+                    <div class="security-badges">
+                        <i class="fas fa-lock"></i>
+                        <span>PCI DSS compliant</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about Pulse HMS</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can Pulse HMS work without internet?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Pulse HMS features offline booking cache and sync functionality. Your clinic can continue operating even when Wi-Fi fails. All data is stored locally and syncs automatically when the connection is restored.</p>
+                        <div class="faq-feature">
+                            <i class="fas fa-wifi-slash"></i>
+                            <span>Offline Mode Available</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Is Pulse HMS suitable for small clinics or solo doctors?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Unlike overbuilt ERP systems designed for large hospitals, Pulse HMS is specifically built for small clinics and solo practitioners. You get all the features you need without the complexity you don't.</p>
+                        <div class="faq-feature">
+                            <i class="fas fa-user-md"></i>
+                            <span>Perfect for Small Clinics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How does the patient dashboard work?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No complicated patient logins required! Patients access their dashboard using a simple secret code. This eliminates the hassle of remembering passwords while keeping patient information secure and easily accessible.</p>
+                        <div class="faq-feature">
+                            <i class="fas fa-key"></i>
+                            <span>Secret Code Access</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How is Pulse HMS different from other HMS tools?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pulse HMS stands out with AI-powered appointment summaries, QR code check-ins, Fake Data Mode for safe testing, and intuitive design. We focus on what small clinics actually need, not enterprise bloat.</p>
+                        <div class="faq-feature">
+                            <i class="fas fa-robot"></i>
+                            <span>AI-Powered Features</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can my staff learn this without training?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Most staff members can learn Pulse HMS in just 15 minutes. The interface is designed to be intuitive and user-friendly, eliminating the need for extensive training sessions.</p>
+                        <div class="faq-feature">
+                            <i class="fas fa-clock"></i>
+                            <span>15-Minute Learning Curve</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How do appointments and check-ins work?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>It's incredibly simple: Scan the QR code, check-in. That's it! No complicated processes or multiple steps. Patients can check themselves in, reducing wait times and staff workload.</p>
+                        <div class="faq-feature">
+                            <i class="fas fa-qrcode"></i>
+                            <span>QR Code Check-ins</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Is my patient data safe?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Your patient data is protected like a vault. We use local data storage, advanced encryption practices, and give you complete offline privacy control. Your data never leaves your clinic unless you choose to sync.</p>
+                        <div class="faq-feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Bank-Level Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can I try it with dummy data first?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Use our Fake Data Mode to explore all features without any risk. Test appointments, patient management, and reporting with safe dummy data before going live with real patient information.</p>
+                        <div class="faq-feature">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Risk-Free Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Does it support custom branding and reports?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Add your clinic's logo, customize report layouts, and create branded mini reports. All printouts and digital reports reflect your clinic's professional branding.</p>
+                        <div class="faq-feature">
+                            <i class="fas fa-palette"></i>
+                            <span>Custom Branding</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What's the pricing?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pulse HMS is built for your budget without compromise. We offer transparent pricing tiers that beat bloated enterprise solutions. Get enterprise-level features at small clinic prices.</p>
+                        <div class="faq-feature">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>Transparent Pricing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Build Something Amazing</h2>
+                <p class="section-subtitle">Get your free consultation and project quote today</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>hello@leafbloom.online</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Portfolio</h3>
+                            <p><a href="https://leafbloom.online" target="_blank">leafbloom.online</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Response Time</h3>
+                            <p>Within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="projectType" name="projectType" required>
+                                <option value="">Select Project Type</option>
+                                <option value="web-app">Web Application</option>
+                                <option value="ecommerce">E-commerce Website</option>
+                                <option value="api">API Development</option>
+                                <option value="mobile">Mobile App</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell me about your project..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -169,12 +940,32 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Ready to Experience the Future?</h2>
-                <p>Join thousands of users who are already leveraging the power of Pulse AI</p>
-                <button class="cta-button-large">
-                    <span>Get Started Now</span>
-                    <i class="fas fa-rocket"></i>
-                </button>
+                <h2>Ready to Transform Your Hospital?</h2>
+                <p>Join 500+ hospitals already using Pulse HMS to streamline operations and improve patient care</p>
+                <div class="cta-buttons">
+                    <button class="cta-button-large" onclick="openPaymentModal('professional', 59)">
+                        <span>Start Free Trial</span>
+                        <i class="fas fa-rocket"></i>
+                    </button>
+                    <button class="cta-button-secondary" onclick="scrollToDemo()">
+                        <span>Schedule Demo</span>
+                        <i class="fas fa-calendar"></i>
+                    </button>
+                </div>
+                <div class="cta-benefits">
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>14-Day Free Trial</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>No Setup Fees</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -190,25 +981,25 @@
                         </div>
                         <span>Pulse</span>
                     </div>
-                    <p>Shaping the future of artificial intelligence</p>
+                    <p>Empowering healthcare facilities with intelligent management solutions</p>
                 </div>
                 <div class="footer-section">
                     <h4>Product</h4>
-                    <a href="#">Features</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">API</a>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#demo">Demo</a>
                 </div>
                 <div class="footer-section">
-                    <h4>Company</h4>
-                    <a href="#">About</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Careers</a>
+                    <h4>Solutions</h4>
+                    <a href="#hospitals">Hospitals</a>
+                    <a href="#clinics">Clinics</a>
+                    <a href="#specialists">Specialists</a>
                 </div>
                 <div class="footer-section">
                     <h4>Support</h4>
-                    <a href="#">Help Center</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Status</a>
+                    <a href="#help">Help Center</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#status">System Status</a>
                 </div>
             </div>
             <div class="footer-bottom">
